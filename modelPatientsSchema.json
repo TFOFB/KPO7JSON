@@ -1,0 +1,96 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "ID": "1",
+            "Name": "Alex",
+            "Surname": "Mitar",
+            "Patronymic": "Mitarovich",
+            "DateOfBirth": "11.11.1987",
+            "PolicyNumber": "2223-1234-4333-5454"
+        }
+    ],
+    "required": [
+        "ID",
+        "Name",
+        "Surname",
+        "Patronymic",
+        "DateOfBirth",
+        "PolicyNumber"
+    ],
+    "properties": {
+        "ID": {
+            "$id": "#/properties/ID",
+            "type": "integer",
+            "title": "The ID schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "\\d",
+            "default": "",
+            "examples": [
+                "1"
+            ]
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "The Name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$",
+            "default": "",
+            "examples": [
+                "Alex"
+            ]
+        },
+        "Surname": {
+            "$id": "#/properties/Surname",
+            "type": "string",
+            "title": "The Surname schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$",
+            "default": "",
+            "examples": [
+                "Mitar"
+            ]
+        },
+        "Patronymic": {
+            "$id": "#/properties/Patronymic",
+            "type": "string",
+            "title": "The Patronymic schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$",
+            "default": "",
+            "examples": [
+                "Mitarovich"
+            ]
+        },
+        "DateOfBirth": {
+            "$id": "#/properties/DateOfBirth",
+            "type": "string",
+            "title": "The DateOfBirth schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d",
+            "default": "",
+            "examples": [
+                "11.11.1987"
+            ]
+        },
+        "PolicyNumber": {
+            "$id": "#/properties/PolicyNumber",
+            "type": "string",
+            "title": "The PolicyNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "([\\d]*-)+([\\d])*$",
+            "default": "",
+            "examples": [
+                "2223-1234-4333-5454"
+            ]
+        }
+    },
+    "additionalProperties": true
+}
+

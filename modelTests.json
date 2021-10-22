@@ -1,0 +1,10 @@
+{
+        "ID": "1",
+        "P_id": "1",
+        "DateOfTest": "11.10.2021",
+        "TestType": "IgG",
+        "TestAccuracy": "Quantitative",
+        "LabName": "Matlab",
+        "TestResult": "Positive"
+}
+

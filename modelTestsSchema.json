@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "ID": "1",
+            "P_id": "1",
+            "DateOfTest": "11.10.2021",
+            "TestType": "IgG",
+            "TestAccuracy": "quantitative",
+            "LabName": "matlab",
+            "TestResult": "positive"
+        }
+    ],
+    "required": [
+        "ID",
+        "P_id",
+        "DateOfTest",
+        "TestType",
+        "TestAccuracy",
+        "LabName",
+        "TestResult"
+    ],
+    "properties": {
+        "ID": {
+            "$id": "#/properties/ID",
+            "type": "string",
+            "title": "The ID schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "\\d",
+            "default": "",
+            "examples": [
+                "1"
+            ]
+        },
+        "P_id": {
+            "$id": "#/properties/P_id",
+            "type": "string",
+            "title": "The P_id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "\\d",
+            "default": "",
+            "examples": [
+                "1"
+            ]
+        },
+        "DateOfTest": {
+            "$id": "#/properties/DateOfTest",
+            "type": "string",
+            "title": "The DateOfTest schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d$",
+            "default": "",
+            "examples": [
+                "11.10.2021"
+            ]
+        },
+        "TestType": {
+            "$id": "#/properties/TestType",
+            "type": "string",
+            "title": "The TestType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "^(IgG|IgM)$",
+            "default": "",
+            "examples": [
+                "IgG"
+            ]
+        },
+        "TestAccuracy": {
+            "$id": "#/properties/TestAccuracy",
+            "type": "string",
+            "title": "The TestAccuracy schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$",
+            "default": "",
+            "examples": [
+                "Quantitative"
+            ]
+        },
+        "LabName": {
+            "$id": "#/properties/LabName",
+            "type": "string",
+            "title": "The LabName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$",
+            "default": "",
+            "examples": [
+                "Matlab"
+            ]
+        },
+        "TestResult": {
+            "$id": "#/properties/TestResult",
+            "type": "string",
+            "title": "The TestResult schema",
+            "description": "An explanation about the purpose of this instance.",
+            "pattern": "^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$",
+            "default": "",
+            "examples": [
+                "Positive"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

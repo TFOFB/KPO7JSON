@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patient>
+    <ID>1</ID>
+    <Name>Alex</Name>
+    <Surname>Mitar</Surname>
+    <Patronymic>Mitarovich</Patronymic>
+    <DateOfBirth>11.11.1987</DateOfBirth>
+    <PolicyNumber>2223-1234-4333-5454</PolicyNumber>
+</Patient>
